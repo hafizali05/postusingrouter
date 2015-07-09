@@ -1,0 +1,24 @@
+<template name="layout">
+    <nav class="navbar navbar-inverse navbar-static-top">
+    	<div class="container-fluid">
+	        <div class="navbar-header">
+	        <a href="{{pathFor route="home"}}"><img src="logo.png"></a>
+	      <button type="button" class="navbar-toggle">
+	        
+	      </button>
+			<a class="navbar-brand right-side-button" href="/posts">Posts</a>
+		    <a class="navbar-brand right-side-button" href="/posts/create">Create</a>
+	      {{#if currentUser}}
+	      		<a href="#" class="logout">Logout</a>
+	      {{else}}
+		      	<a class="navbar-brand right-side-button" href="/login">Login</a>
+		  {{/if}}
+	    	</div>
+	   	</div>
+    </nav>
+	<br>
+	<br>	
+	<!-- <h1>{{currentUser.emails[0].address}}</h1> -->
+        {{> yield}}
+    <hr>
+</template>
