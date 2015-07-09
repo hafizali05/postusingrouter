@@ -1,1 +1,1 @@
-@Postdata  = new Meteor.Collection 'postdata'
+@Post  = new Meteor.Collection 'post'
