@@ -1,3 +1,4 @@
-Meteor.publish 'post', ->
+Meteor.publish 'post', ->	
 	Post.find()
-	console.log 'post data'
+	# console.log 'post data:',Post
+	
