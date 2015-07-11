@@ -8,7 +8,10 @@ Template.create_post.events
 			title : title
 			description : description
 			user_id : Meteor.userId()
-			created_at: new Date().getTime()
+			created_at: new Date()
+			# updated_at: created_at
 		console.log 'data',data
-		Post.insert(data)
+		Posts.insert(data)
 		Router.go 'posts'
+
+

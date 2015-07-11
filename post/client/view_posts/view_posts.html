@@ -3,11 +3,21 @@
     <div class="container">
     {{#each post}}
 		<div class="panel panel-default">
-		  <div class="panel-heading">{{title}}</div>
-		  <div class="panel-body">
+			<div class="panel-heading clearfix" id="title">{{title}}
+			<a class="pull-right" href="/posts/{{_id}}/edit">Edit</a>
+			</div>
+		  	<div class="panel-body" id="description">
 		    {{description}}
-		  </div>
+		  	</div>
 		</div>
 		{{/each}}
 	</div>   
 </template>
+
+ <!-- href="/posts/:_id/edit" -->
+ <!-- <button class="btn btn-danger btn-md edit">Edit</button> -->
+<!-- <a class="navbar-brand" href="/posts/:_id/edit">edit</a> -->
+ <!-- <button class="btn btn-success" ></button> -->
+
+
+		  		<!-- <button class="btn btn-success pull-right" href="/posts/:_id/edit">Edit</button> -->

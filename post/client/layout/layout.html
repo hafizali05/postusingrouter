@@ -2,17 +2,16 @@
     <nav class="navbar navbar-inverse navbar-static-top">
     	<div class="container-fluid">
 	        <div class="navbar-header">
-	        <a href="{{pathFor route="home"}}"><img src="logo.png"></a>
-	      <button type="button" class="navbar-toggle">
-	        
-	      </button>
-			<a class="navbar-brand right-side-button" href="/posts">Posts</a>
-		    <a class="navbar-brand right-side-button" href="/posts/create">Create</a>
-	      {{#if currentUser}}
-	      		<a class="navbar-brand right-side-button logout" href="#">Logout</a>
-	      {{else}}
-		      	<a class="navbar-brand right-side-button" href="/login">Login</a>
-		  {{/if}}
+	        	<a href="/" class="pull-left"><img src="logo.png"></a>
+		        <div class="right-side-button">
+			      	<a class="navbar-brand" href="/posts">Posts</a>
+					    <a class="navbar-brand" href="/posts/create">Create</a>
+				      {{#if currentUser}}
+				      		<a class="navbar-brand logout" href="#">Logout</a>
+				      {{else}}
+					      	<a class="navbar-brand" href="/login">Login</a>
+					  {{/if}}
+				</div>
 	    	</div>
 	   	</div>
     </nav>
